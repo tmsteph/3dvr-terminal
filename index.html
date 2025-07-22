@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3dvr-terminal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col items-center justify-center p-8">
+
+  <header class="text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-teal-400 mb-2">3dvr-terminal</h1>
+    <p class="text-lg text-gray-300">Your command-line ChatGPT assistant with clipboard magic</p>
+  </header>
+
+  <main class="mt-10 max-w-xl text-sm md:text-base space-y-6">
+
+    <section>
+      <h2 class="text-xl text-teal-300 mb-2 font-semibold">🛠️ Features</h2>
+      <ul class="list-disc list-inside text-gray-200 space-y-1">
+        <li>Ask ChatGPT from your terminal</li>
+        <li>Auto-copies code blocks to your clipboard</li>
+        <li>Loop mode for interactive Q&A</li>
+        <li>One-line install script</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-xl text-teal-300 mb-2 font-semibold">🚀 Install</h2>
+      <pre class="bg-gray-800 p-4 rounded text-sm overflow-x-auto text-green-300"><code>
+git clone https://github.com/tmsteph/3dvr-terminal.git
+cd 3dvr-terminal
+chmod +x *.sh
+./install.sh
+      </code></pre>
+      <p class="text-gray-400 mt-2">Then add this to your shell config:</p>
+      <pre class="bg-gray-800 p-2 rounded text-green-300"><code>alias askgpt="$PWD/askgpt.sh"</code></pre>
+    </section>
+
+    <section>
+      <h2 class="text-xl text-teal-300 mb-2 font-semibold">💬 Example</h2>
+      <pre class="bg-gray-800 p-4 rounded text-sm overflow-x-auto text-yellow-200"><code>
+askgpt how do I center a div in CSS?
+      </code></pre>
+    </section>
+
+    <section>
+      <h2 class="text-xl text-teal-300 mb-2 font-semibold">🌐 GitHub</h2>
+      <a href="https://github.com/tmsteph/3dvr-terminal" target="_blank" class="text-blue-400 hover:underline">
+        github.com/tmsteph/3dvr-terminal
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="mt-12 text-gray-500 text-xs text-center">
+    Made with 🧠 by <a href="https://3dvr.tech" target="_blank" class="text-teal-400 hover:underline">3dvr.tech</a>
+  </footer>
+
+</body>
+</html>
